@@ -1,0 +1,280 @@
+<html>
+<head>
+    <title>THUCTAPIOT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="more.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <script src="https://kit.fontawesome.com/f22b6b54d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="Logo">
+                  <img src="./img/nền.png" alt="" class="logo">
+                </div>
+                <ul>
+                    <li class="nav-link"><a href="web.html">Home</a></li>
+                    <li><a href="web.html">About Us</a></li>
+                    <li><a href="web.html">Book Tour</a></li>
+                    <li><a href="web.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                <video loop>
+                    <source src = "./img/vd.mp4" type = "video/mp4">
+                </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+        </header>
+        <div class="certain">
+            <h1 class="section-heading">Our Services</h1>
+            <div class="row">
+                <div class="service">
+                    <i class="fa-solid fa-plane"></i>
+                    <h2>Đặt vé máy bay</h2>
+                    <p class="about-text">
+                        Chúng tôi cung cấp dịch vụ đặt vé máy bay trực tuyến đến nhiều điểm đến. Khách hàng có thể tìm kiếm, so sánh giá vé và đặt vé một cách thuận tiện thông qua trang web của chúng tôi.
+                      </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h2>Đặt khách sạn</h2>
+                    <p class="about-text">
+                        Chúng tôi có sẵn một danh sách đa dạng các khách sạn, từ khách sạn sang trọng đến nhà nghỉ tiết kiệm. 
+                        Khách hàng có thể tìm kiếm khách sạn theo địa điểm, ngày nhận phòng và số lượng khách, và đặt phòng với mức giá ưu đãi.
+                      </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                    <h2>Tour du lịch</h2>
+                    <p class="about-text">
+                        Chúng tôi tổ chức các tour du lịch. 
+                        Các tour được thiết kế để khám phá nét đẹp tự nhiên, văn hóa và lịch sử của các điểm đến. 
+                        Chúng tôi cung cấp các lựa chọn tour linh hoạt, từ các tour nhóm đến các tour cá nhân hoặc tour tự do.
+                      </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-van-shuttle"></i>
+                    <h2>Đưa đón sân bay</h2>
+                    <p class="about-text">
+                        Để giúp khách hàng di chuyển dễ dàng từ sân bay đến khách sạn hoặc địa điểm khác, chúng tôi cung cấp dịch vụ đưa đón sân bay. 
+                        Chúng tôi có đội xe đa dạng bao gồm xe du lịch, xe sang trọng và xe gia đình, đảm bảo sự thuận tiện và an toàn cho khách hàng.
+                      </p>
+                </div>
+                
+            </div>
+        </div>
+        <!-- popular places section -->
+        <section id = "popular" class = "py-4">
+            <div class = "title-wrap">
+                <h2 class = "lg-title">Popular Places</h2>
+            </div>
+
+            <div class = "popular-row">
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-1.jpg" alt = "">
+                    <div>
+                        <span>Hạ Long Bay, Quảng Ninh</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Đây là di sản thế giới của UNESCO. 
+                            Một trong những điểm đến hàng đầu của du khách, với hệ thống đảo đá vôi độc đáo và cảnh quan tuyệt đẹp.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-2.jpg" alt = "">
+                    <div>
+                        <span>Sapa, Lào Cai</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Sapa là một thành phố núi nổi tiếng với cảnh quan tuyệt đẹp, đồng bào dân tộc đa dạng và những chuyến đi bộ trên đồi.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-3.jpg" alt = "">
+                    <div>
+                        <span>Huế, Việt Nam</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Huế là một thành phố lịch sử quan trọng với nhiều di sản văn hóa, trong đó có Cố đô Huế - một di sản thế giới của UNESCO.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-4.jpg" alt = "">
+                    <div>
+                        <span>Hội An, Quảng Nam</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Với kiến trúc cổ đại đẹp mắt thu hút du khách bởi những con phố nhỏ, chợ đêm sầm uất và những ngôi đền cổ.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-5.jpg" alt = "">
+                    <div>
+                        <span>Đà Nẵng</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Đà Nẵng là một thành phố du lịch phát triển nhanh chóng, nổi tiếng với bãi biển Mỹ Khê và cầu Rồng độc đáo.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-6.jpg" alt = "">
+                    <div>
+                        <span>Nha Trang, Khánh Hòa</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Với bãi biển xanh trong vàng và vật lý thuận lợi, Nha Trang thu hút du khách bằng những hoạt động thể thao nước và những điểm tham quan hấp dẫn.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-7.jpg" alt = "">
+                    <div>
+                        <span>Phú Quốc, Kiên Giang</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Đảo Phú Quốc nằm ở phía nam Việt Nam và là một điểm đến nổi tiếng với bãi biển trắng tuyệt đẹp và nhiều khu nghỉ dưỡng sang trọng.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "img/popular-8.jpg" alt = "">
+                    <div>
+                        <span>Đà Lạt</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;400 reviews</li>
+                        </ul>
+                        <p class = "text">Đà Lạt là một thành phố núi ở miền Trung Việt Nam, nổi tiếng với khí hậu mát mẻ và cảnh quan hữu tình của các hồ, thác nước và vườn hoa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular places section -->
+        <div>
+            <footer>
+              <div class="row1">
+                <div class="col">
+                  <img src="img/LOGO.jpg" alt="logo">
+                  <p>Nguyễn Văn Tấn 20161041</p>
+                  <p>Nguyễn Thị Bích Trâm 20161273</p>
+                  <p>Lê Vũ Lộc 20161226</p>
+                </div>
+                <div class="col">
+                  <h3>Office <div class="underline"><span></span></div>
+                  </h3>
+                  <p>01 Võ Văn Ngân </p>
+                  <p>Linh Chiểu, Thủ Đức</p>
+                  <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+                  <p class="email-id">xipo.tan@gmail.com</p>
+                  <h4>0703337870</h4>
+                </div>
+                <div class="col">
+                  <h3>Links <div class="underline"><span></span></div>
+                  </h3>
+                  <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contacts</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3>Newsletter <div class="underline"><span></span></div>
+                  </h3>
+                  <form>
+                    <i class=" far fa-regular fa-envelope fa-lg"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                  </form>
+                  <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100009257110794"><i
+                        class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="https://www.instagram.com/_suntannguyen_/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://github.com/pecuon012">
+                      <i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://www.youtube.com/@TanNguyen-sc8gd/featured"><i
+                        class="fa-brands fa-youtube fa-2xl"></i></a>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <p class="copyright">Easy Tutorials © 2021 - All Rights Reserved</p>
+            </footer>
+          </div>
+    </div>
+</body>
+
+</html>

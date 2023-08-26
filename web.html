@@ -1,0 +1,574 @@
+<html>
+
+<head>
+  <title>THUCTAPIOT</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/60d088f019.js"></script>
+</head>
+
+<body onload="slider()">
+  <header>
+    <nav>
+      <div class="menu">
+        <div class="Logo">
+          <img src="./img/nền.png" alt="" class="logo">
+        </div>
+        <ul>
+          <li class="#"><a href="#">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Book Tour">Book Tour</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="center">
+      <div class="slider">
+        <img src="./img/1.jpg" id="slideImage">
+      </div>
+      <div class="title">Yêu Thiên Nhiên </div>
+      <button>
+        <a href="learn more.html" class="btn">LEARN MORE</a>
+      </button>
+    </div>
+    <script>
+      var slideImage = document.getElementById("slideImage");
+      var img = new Array(
+        "img/1.jpg",
+        "img/2.jpg",
+        "img/3.jpg",
+        "img/4.jpg"
+      );
+      var len = img.length;
+      var i = 0;
+      function slider() {
+        if (i > len - 1) {
+          i = 0;
+        }
+        slideImage.src = img[i];
+        i++;
+        setTimeout('slider()', 3000);
+      }
+    </script>
+  </header>
+  <div id="content">
+    <Viet Nam>
+      <div id="About" class="content-section">
+        <h2 class="section-heading">Việt Nam</h2>
+        <p class="section-sub-heading">Coastal paradise.</p>
+        <p class="about-text">
+          Việt Nam là một quốc gia đa dạng với cảnh quan thiên nhiên tuyệt đẹp, văn hóa độc đáo và lịch sử phong phú.
+          Du lịch ở Việt Nam mang đến cho du khách một trải nghiệm tuyệt vời với những danh lam thắng cảnh tuyệt đẹp,
+          các thành phố sôi động, bãi biển tuyệt vời và ẩm thực hấp dẫn.
+          Một trong những điểm đến nổi tiếng nhất ở Việt Nam là Hà Nội, thủ đô của Việt Nam. Nơi có kiến trúc Pháp hòa
+          quyện với văn hóa truyền thống.
+          Các thành phố biển như Đà Nẵng, Nha Trang và Phú Quốc với bãi biển trắng mịn và nước biển trong xanh, Nha
+          Trang với bãi biển xinh đẹp và rạn san hô.
+          Việt Nam cũng nổi tiếng với ẩm thực đa dạng và phong phú. Với những đặc điểm độc đáo và phong cảnh tuyệt đẹp,
+          du lịch ở Việt Nam là một trải nghiệm tuyệt với cho du khách muốn khám phá văn hóa, lịch sử và thiên nhiên của
+          đất nước này.
+        </p>
+      </div>
+      <div class="container1">
+        <div class="team">
+          <div class="team_member">
+            <div class="service">
+              <div class="service-logo">
+                <img src="./img/nen.png" alt="">
+              </div>
+              <h4>Cung cấp thông tin chi tiết</h4>
+              <p>Chúng tôi cam kết cung cấp thông tin chi tiết và đáng tin cậy về các điểm đến, địa điểm tham quan,
+                khách sạn, nhà hàng, hoạt động và các thông tin hữu ích khác liên quan đến du lịch ở Việt Nam.
+              </p>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+          <div class="team_member">
+            <div class="service">
+              <div class="service-logo">
+                <img src="./img/nền1.png" alt="">
+              </div>
+              <h4>Khám phá đa dạng</h4>
+              <p>Việt Nam có nhiều điểm đến hấp dẫn và đa dạng từ miền Bắc đến miền Nam.
+                Chúng tôi sẽ giới thiệu và khám phá sự đa dạng này, giúp du khách có cái nhìn toàn diện về đất nước và
+                những điểm đến độc đáo.
+              </p>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+          <div class="team_member">
+            <div class="service">
+              <div class="service-logo">
+                <img src="./img/ntrang.png" alt="">
+              </div>
+              <h4>Tạo trải nghiệm đáng nhớ</h4>
+              <p>Du lịch là một trải nghiệm tuyệt vời và chúng tôi muốn giúp du khách tạo ra những kỷ niệm đáng nhớ về
+                các hoạt động, chuyến đi và trải nghiệm du lịch tại Việt Nam.
+              </p>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+          <div class="team_member">
+            <div class="service">
+              <div class="service-logo">
+                <img src="./img/bien.png" alt="">
+              </div>
+              <h4>Tương tác và chia sẻ</h4>
+              <p>Khuyến khích sự tương tác và chia sẻ thông tin giữa cộng đồng du khách.
+                Chúng tôi cung cấp một nền tảng để người dùng có thể đánh giá, bình luận, gửi câu hỏi và chia sẻ kinh
+                nghiệm của mình.
+                Sự chia sẻ này sẽ giúp du khách có được cái nhìn đa chiều và tăng cường trải nghiệm du lịch của họ.
+              </p>
+            </div>
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+      </div>
+      <!-- diadiem -->
+      <div class="diadiem">
+        <h2>THÔNG TIN CÁC ĐỊA ĐIỂM</h2>
+        <div class="container">
+          <div class="box">
+            <div class="content">
+              <!-- nha trang -->
+              <h3>Nha Trang</h3>
+              <div class="image-container">
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#127777;</span>
+                  <p class="info-title">Nhiệt độ</p>
+                  <p id="nhietdo1" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128167;</span>
+                  <p class="info-title">Độ ẩm</p>
+                  <p id="doam1" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128168;</span>
+                  <p class="info-title">Khí Gas</p>
+                  <p id="khí1" class="info-hienthi">00</p>
+                </div>
+              </div>
+
+              <div class="additional-info">
+                <p>Tháp Bà Ponagar
+                  <br>Vị trí: Tháp Bà Ponagar nằm trên đồi Cù Lao, cách trung tâm thành phố Nha Trang khoảng 2 km về
+                  phía đông.
+                  <br>Mô tả địa điểm: Tháp Bà Ponagar là một tòa tháp Chăm cổ được xây dựng từ thế kỷ VIII đến thế kỷ
+                  XIII. Có kiến trúc độc đáo cùng với lịch sử và văn hóa cao, thể hiện sự phát triển của người Chăm và
+                  cảnh quan tuyệt đẹp.
+                  <br>Tham quan: Du khách có thể khám phá tòa tháp, ngắm nhìn kiến trúc độc đáo và tìm hiểu về lịch sử
+                  và văn hóa của người Chăm.
+                  <br>Chụp ảnh: Với cảnh quan đẹp và kiến trúc nghệ thuật, tháp là một điểm chụp ảnh phổ biến cho du
+                  khách.
+                </p>
+              </div>
+            </div>
+            <img class="tphcm" src="img/nhatrang.jpg" alt="Nha Trang">
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <!-- ha noi -->
+              <h3>Hà Nội</h3>
+              <div class="image-container">
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#127777;</span>
+                  <p class="info-title">Nhiệt độ</p>
+                  <p id="nhietdo2" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128167;</span>
+                  <p class="info-title">Độ ẩm</p>
+                  <p id="doam2" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128168;</span>
+                  <p class="info-title">Khí Gas</p>
+                  <p id="khí2" class="info-hienthi">00</p>
+                </div>
+              </div>
+
+              <div class="additional-info">
+                <p>Hồ Gươm
+                  <br>Nằm ở trung tâm thành phố Hà Nội, Việt Nam. Là một trong những địa điểm du lịch phổ biến và đẹp
+                  nhất ở Hà Nội.
+                  Được bao quanh bởi các ngôi đền lịch sử, kiến trúc cổ và là nơi giao thoa của thiên nhiên và văn hóa.
+                  <br>Hoạt động du lịch: Du khách có thể tham gia vào nhiều hoạt động tại Hồ Gươm.
+                  Đi dạo quanh hồ để ngắm cảnh và tận hưởng không khí yên bình.
+                  Du khách cũng có thể thuê một chiếc thuyền nhỏ để đi tham quan đảo Ngọc Sơn nằm giữa hồ.
+                  Ngoài ra, quanh hồ cũng có nhiều khu vực với các quán cà phê, nhà hàng và cửa hàng bán đặc sản để du
+                  khách có thể thưởng thức ẩm thực và mua sắm.
+                </p>
+              </div>
+            </div>
+            <img class="tphcm" src="img/hanoi.jpg" alt="TP Hồ Chí Minh">
+          </div>
+
+          <div class="box">
+            <div class="content">
+              <!-- da nang -->
+              <h3>Đà Nẵng</h3>
+              <div class="image-container">
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#127777;</span>
+                  <p class="info-title">Nhiệt độ</p>
+                  <p id="nhietdo3" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128167;</span>
+                  <p class="info-title">Độ ẩm</p>
+                  <p id="doam3" class="info-hienthi">00</p>
+                </div>
+                <div class="info-item">
+                  <span style="font-size: 80px;">&#128168;</span>
+                  <p class="info-title">Khí Gas</p>
+                  <p id="khí3" class="info-hienthi">00</p>
+                </div>
+              </div>
+              <div class="additional-info">
+                <p>Bà Nà Hills
+                  <br>Bà Nà Hills là một khu du lịch nằm trên đỉnh núi Chúa nổi tiếng với cảnh quan tuyệt đẹp, kiến trúc
+                  độc đáo và cáp treo dài nhất thế giới.
+                  <br>Công viên giải trí Bà Nà Hills: Du khách có thể tham gia vào các trò chơi mạo hiểm như lướt
+                  zipline, leo núi,...
+                  Ngoài ra còn có các khu vực vui chơi dành cho trẻ em và các nhà hàng, quán cà phê để du khách thưởng
+                  thức ẩm thực và nghỉ ngơi.
+                  <br>Làng Pháp: Du khách có thể tham quan Làng Pháp - một khu vực với kiến trúc được lấy cảm hứng từ
+                  các ngôi làng ở Pháp.
+                  Khám phá các công trình kiến trúc độc đáo với các cửa hàng bán đồ thủ công, quà lưu niệm và các món ăn
+                  Pháp truyền thống.
+                </p>
+              </div>
+            </div>
+            <img class="tphcm" src="img/danang.jpg" alt="TP Hồ Chí Minh">
+          </div>
+        </div>
+</body>
+<div id="main">
+  <div id="top">
+    <div id="time"> </div>
+    <script>
+      function dongho() {
+        var time = new Date();
+        var gio = time.getHours();
+        var phut = time.getMinutes();
+        var giay = time.getSeconds();
+        if (gio < 10)
+          gio = "0" + gio;
+        if (phut < 10)
+          phut = "0" + phut;
+        if (giay < 10)
+          giay = "0" + giay;
+        document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+        setTimeout("dongho()", 1000);
+      };
+      dongho();
+    </script>
+    <div class="contain">
+      <div class="image-container">
+        <img id="den" src="./img/denoff.png">
+        <div class="button-container">
+          <button id="mo">ON</button>
+          <button id="tat">OFF</button>
+        </div>
+        <img id="sothich" src="./img/like.png">
+        <div class="button-container">
+          <button id="like">LIKE</button>
+          <button id="dislike">DISLIKE</button>
+        </div>
+        <img id="chuong" src="./img/chuongtat.png">
+        <div class="button-container">
+          <button id="off">TAT</button>
+          <button id="on">MO</button>
+        </div>
+      </div>
+    </div>
+    <div id="Book Tour" class="tour-section">
+      <div class="content-section">
+        <h2 class="section-heading text-while">TOUR DATES</h2>
+        <p class="section-sub-heading text-while">Remember to book your tickets</p>
+        <!--Places-->
+        <div class="row places-list">
+          <div class="place-item">
+            <img src="./img/nt.jpg" alt="Tour Nha Trang" class="place-img">
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-heading">Tour TPHCM - Nha Trang</h3>
+              <p class="place-time">Time: 3 day</p>
+              <p class="place-desc">Start from: TP Hồ Chí Minh</p>
+              <a href="" class="place-buy-btn">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="row places-list">
+          <div class="place-item">
+            <img src="./img/hn.jpg" alt="Tour Hà Nội" class="place-img">
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-heading">Tour TPHCM - Hà Nội </h3>
+              <p class="place-time">Time: 3 days</p>
+              <p class="place-desc">Start from: TP Hồ Chí Minh</p>
+              <a href="" class="place-buy-btn">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="row places-list">
+          <div class="place-item">
+            <img src="./img/dn.png" alt="Tour Đà Nẵng" class="place-img">
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-heading">Tour TPHCM - Đà Nẵng</h3>
+              <p class="place-time">Time: 3 days</p>
+              <p class="place-desc">Start from: TP Hồ Chí Minh</p>
+              <a href="" class="place-buy-btn">Buy Tickets</a>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- nhận xét -->
+    <div id="comment">
+      <h2>NHẬN XÉT CỦA KHÁCH HÀNG</h2>
+      <div id="comment-body">
+        <div class="prev">
+          <a href="#">
+            <img src="./img/prev.png" alt="">
+          </a>
+        </div>
+        <ul id="list-comment">
+          <li class="item">
+            <div class="avatar">
+              <img src="./img/avatar1.png" alt="">
+            </div>
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="name">Nguyễn Văn Tấn</div>
+
+            <div class="text">
+              <p>Nha Trang đó là một địa điểm du lịch rất là đa dạng phong phú, thích hợp đi vào dịp hè BOOK vé thôi bà
+                con.</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="avatar">
+              <img src="./img/avatar2.png" alt="">
+            </div>
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="name">Nguyễn Thị Bích Trâm</div>
+
+            <div class="text">
+              <p>Thời tiết Hà Nội tuy rất thất thường nhưng nó không thể che lắp đi nét đẹp của những Con Phố.
+                Ẩm thực hà nội tuy lạ nhưng rất ngon😋.</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="avatar">
+              <img src="./img/avatar3.png" alt="">
+            </div>
+            <div class="stars">
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+              <span>
+                <img src="./img/star.png" alt="">
+              </span>
+            </div>
+            <div class="name">Lê Vũ Lộc</div>
+            <div class="text">
+              <p>Đà Nẵng đúng là nơi chữa lành tâm hồn tốt nhất, đã đi nhiều lần rồi nhưng lần nào đến cũng có cảm giác
+                như lần đầu, Đà Nẵng thật tuyệt, mn book tour bên này đi dịch vụ ổn áp oke lắm ạ🥰.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="next">
+          <a href="#">
+            <img src="./img/next.png" alt="">
+          </a>
+        </div>
+      </div>
+      <script>
+        const next = document.querySelector('.next')
+        const prev = document.querySelector('.prev')
+        const comment = document.querySelector('#list-comment')
+        const commentItem = document.querySelectorAll('#list-comment .item')
+        var translateY = 0
+        var count = commentItem.length
+
+        next.addEventListener('click', function (event) {
+          event.preventDefault()
+          if (count == 1) {
+            // Xem hết bình luận
+            return false
+          }
+          translateY += -400
+          comment.style.transform = `translateY(${translateY}px)`
+          count--
+        })
+
+        prev.addEventListener('click', function (event) {
+          event.preventDefault()
+          if (count == 3) {
+            // Xem hết bình luận
+            return false
+          }
+          translateY += 400
+          comment.style.transform = `translateX(${translateY}px)`
+          count++
+        })
+      </script>
+    </div>
+    <!-- footer -->
+    <div id="Contact">
+      <footer>
+        <div class="row1">
+          <div class="col">
+            <img src="img/LOGO.jpg" alt="logo">
+            <p>Nguyễn Văn Tấn 20161041</p>
+            <p>Nguyễn Thị Bích Trâm 20161273</p>
+            <p>Lê Vũ Lộc 20161226</p>
+          </div>
+          <div class="col">
+            <h3>Office <div class="underline"><span></span></div>
+            </h3>
+            <p>01 Võ Văn Ngân </p>
+            <p>Linh Chiểu, Thủ Đức</p>
+            <p>Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p class="email-id">xipo.tan@gmail.com</p>
+            <h4>0703337870</h4>
+          </div>
+          <div class="col">
+            <h3>Links <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div>
+            </h3>
+            <form>
+              <i class=" far fa-regular fa-envelope fa-lg"></i>
+              <input type="email" placeholder="Enter your email id" required>
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100009257110794"><i
+                  class="fa-brands fa-facebook fa-2xl"></i></a>
+              <a href="https://www.instagram.com/_suntannguyen_/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+              <a href="https://github.com/pecuon012">
+                <i class="fa-brands fa-github fa-2xl"></i></a>
+              <a href="https://www.youtube.com/@TanNguyen-sc8gd/featured"><i
+                  class="fa-brands fa-youtube fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Easy Tutorials © 2021 - All Rights Reserved</p>
+      </footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="chucnang.js"></script>
+    </body>
+
+</html>
